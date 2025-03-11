@@ -16,22 +16,23 @@ Dataset is from https://www.kaggle.com/datasets/asinow/diabetes-dataset/data
 Dataset contains 9,538 medical records with 16 features
 | Feature Name  | Description                                  | Data Type  | Example |
 |--------------|--------------------------------------------|------------|---------|
-| Age      | Blood glucose level in mg/dL             | Integer    | 40     |
-| Pregnancies | Blood pressure (mmHg)                   | Integer    | 13      |
+| Age      | Age of the individual             | Integer    | 40     |
+| Pregnancies | Times patient has been pregnant          | Integer    | 13      |
 | BMI          | Body Mass Index                          | Float    | 28.39    |
-| Glucose          | Age of the individual                    | Float    | 116.5      |
-| HbA1c | Family history of diabetes (Yes/No)     | Float | 4.5     |
-| LDL | Family history of diabetes (Yes/No)     | Float | 50.7     |
-| HDL | Family history of diabetes (Yes/No)     | Float | 39.1     |
-| Triglycerides | Family history of diabetes (Yes/No)     | Float | 117.0     |
-| WaistCircumference | Family history of diabetes (Yes/No)     | Float | 108.9     |
-| HipCircumference | Family history of diabetes (Yes/No)     | Float | 110.0     |
-| WHR | Family history of diabetes (Yes/No)     | Float | 0.99     |
-| FamilyHistory | Family history of diabetes (Yes/No)     | Integer | 0     |
-| DietType | Family history of diabetes (Yes/No)     | Integer | 0     |
-| Hypertension | Family history of diabetes (Yes/No)     | Integer | 0     |
-| MedicationUse | Family history of diabetes (Yes/No)     | Integer | 1     |
-| Outcome | Family history of diabetes (Yes/No)     | Integer | 0     |
+| Glucose          | Blood glucose level in mg/dL                    | Float    | 116.5      |
+| BloodPressure | Systolic blood pressure     | Float | 104.4     |
+| HbA1c | Hemoglobin A1c level (%)     | Float | 4.5     |
+| LDL | Cholestrol level (bad)     | Float | 50.7     |
+| HDL | Cholestrol level (good)    | Float | 39.1     |
+| Triglycerides | Blood fat level     | Float | 117.0     |
+| WaistCircumference | Waist measurement in cm     | Float | 108.9     |
+| HipCircumference | Hip measurement in cm     | Float | 110.0     |
+| WHR | Waist to hip ratio     | Float | 0.99     |
+| FamilyHistory | Individual has a family history in diabetes (Yes = 1/No = 0)     | Integer | 0     |
+| DietType | Individual's Diet type     | Integer | 0     |
+| Hypertension | High blood pressure (Yes = 1/No = 0)    | Integer | 0     |
+| MedicationUse | Medication's taken by Individual     | Integer | 1     |
+| Outcome | Diagnosis result for Diabetes (Yes = 1/No = 0)    | Integer | 0     |
 
 ## 📊 Exploratory Data Analysis (EDA)
 - In matrix correlation FamilyHistory has 0.91 score indicates leakage.
